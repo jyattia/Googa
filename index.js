@@ -34,7 +34,7 @@ function home() {
             '<div id="homeOneItem1" class="homeOneItem">' +
                 '<div class="homeOneBaseItem">' +
                     '<div class="homeOneSubTitle">Company Website</div>' +
-                    '<button onclick="expandHomeOneItem(1, 100)" class="homeOneExpand">+</button>' +
+                    '<button id="homeOnePlus1" onclick="expandHomeOneItem(1, 100)" class="homeOneExpand">+</button>' +
                 '</div>' +
                 '<div class="homeOneSubContent">' +
                     '<p>Increase your company\'s outreach</p>' +
@@ -44,7 +44,7 @@ function home() {
             '<div id="homeOneItem2" class="homeOneItem">' +
                 '<div class="homeOneBaseItem">' +
                     '<div class="homeOneSubTitle">Automate Tasks</div>' +
-                    '<button onclick="expandHomeOneItem(2, 100)" class="homeOneExpand">+</button>' +
+                    '<button id="homeOnePlus2" onclick="expandHomeOneItem(2, 100)" class="homeOneExpand">+</button>' +
                 '</div>' +
                 '<div class="homeOneSubContent">' +
                     '<p>Increase your company\'s productivity by cutting down on tedious tasks</p>' +
@@ -54,7 +54,7 @@ function home() {
             '<div id="homeOneItem3" class="homeOneItem">' +
                 '<div class="homeOneBaseItem">' +
                     '<div class="homeOneSubTitle">Mobile Apps</div>' +
-                    '<button onclick="expandHomeOneItem(3, 100)" class="homeOneExpand">+</button>' +
+                    '<button id="homeOnePlus3" onclick="expandHomeOneItem(3, 100)" class="homeOneExpand">+</button>' +
                 '</div>' +
                 '<div class="homeOneSubContent">' +
                     '<p>As smartphones are pretty much everywhere, it may make sense to have an app for your business</p>' +
@@ -63,7 +63,7 @@ function home() {
             '<div id="homeOneItem4" class="homeOneItem">' +
                 '<div class="homeOneBaseItem">' +
                     '<div class="homeOneSubTitle">Much More</div>' +
-                    '<button onclick="expandHomeOneItem(4, 100)" class="homeOneExpand">+</button>' +
+                    '<button id="homeOnePlus4" onclick="expandHomeOneItem(4, 100)" class="homeOneExpand">+</button>' +
                 '</div>' +
                 '<div class="homeOneSubContent">' +
                     '<p>Contact us today to see if we can help you with your software needs.</p>' +
