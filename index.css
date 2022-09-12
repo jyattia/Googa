@@ -326,6 +326,12 @@ li {
     margin-top: 40px;
 }
 
+@media only screen and (min-width: 600px) {
+    .tabbedText {
+        width: 100%;
+    }
+}
+
 #secondHomeDiv {
     background-color: black;
 }
