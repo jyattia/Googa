@@ -107,3 +107,11 @@ function aboutUs() {
 function contactUs() {
     document.getElementById("bodyDiv").innerHTML = '<h1>Contact Us</h1>'
 }
+
+function signIn() {
+    document.getElementById("bodyDiv").innerHTML = '<h1>Sign In Page</h1>'
+}
+
+function signUp() {
+    document.getElementById("bodyDiv").innerHTML = '<h1>Sign Up Page</h1>'
+}
