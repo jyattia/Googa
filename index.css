@@ -168,7 +168,7 @@ li {
 }
 
 .homeOneDiv {
-    background-image: url("../images/robotbg.png");
+    background-image: url("./images/robotbg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -177,7 +177,7 @@ li {
 
 .homeTwoDiv {
     min-height: 400px;
-    background-image: url("../images/meeting.png");
+    background-image: url("./images/meeting.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -217,7 +217,7 @@ li {
 }
 
 .homeThreeDiv {
-    background-image: url("../images/home3.jpg");
+    background-image: url("./images/home3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
