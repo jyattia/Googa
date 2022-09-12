@@ -5,8 +5,11 @@
     <link rel="stylesheet" href="./index.css">
   </head>
   <body>
+
+
     <div class="headerDiv">
       <img class="siteTitle" src="./images/logo1.png">
+
       <div class="headerLinksContainer">
         <div class="headerLinksSpacer"></div>
         <div class="headerLinksDiv">
@@ -16,6 +19,7 @@
           <button class="headerLink logoColors">Contact Us</button>
         </div>
       </div>
+
       <div class="loginDiv">
         <button class="loginButton">
           <div style="width: 85px; text-align: right;">SIGN IN</div>
@@ -26,7 +30,24 @@
           <div class="signUpCircle">></div>
         </button>
       </div>
+      <button onclick="showSecondMenu()" class="hamburgerMenu">
+        <div class="hamburgerSlices topSlice"></div>
+        <div class="hamburgerSlices"></div>
+        <div class="hamburgerSlices"></div>
+      </button>
+
+      <div id="secondMenu" class="secondHeaderMenu">
+        <button class="headerLink logoColors">Home</button>
+        <button class="headerLink logoColors">Services</button>
+        <button class="headerLink logoColors">About Us</button>
+        <button class="headerLink logoColors">Contact Us</button>
+        <button class="headerLink logoColors">Sign In</button>
+        <button class="headerLink logoColors">Sign Up</button>
+      </div>
+
     </div>
+
+
     <div class="headerBottomDiv"></div>
     <div class="headerSpacer"></div>
     <div class="bodyDiv">
@@ -35,34 +56,52 @@
         <div class="homeSideBySide">
           <div class="homeOneContent">
             <h2>Here are some potential ways software could help your business!</h2>
-            <ul>
-              <li>
-                Company Website
-                <ul>
-                  <li>Increase your company's outreach</li>
-                  <li>Help customers understand what your company offers</li>
-                </ul>
-              </li>
-              <li>
-                Automate Tasks
-                <ul>
-                  <li>Increase your company's productivity by cutting down on tedious tasks</li>
-                  <li>Reduce errors that can arise during such tasks</li>
-                </ul>
-              </li>
-              <li>
-                Mobile Apps
-                <ul>
-                  <li>As smartphones are pretty much everywhere, it may make sense to have an app for your business</li>
-                </ul>
-              </li>
-              <li>
-                And Much More!!
-                <ul>
-                  <li>Contact us today to see if we can help you with your software needs</li>
-                </ul>
-              </li>
-            </ul>
+            <div class="homeOneItemsContainer">
+
+              <div id="homeOneItem1" class="homeOneItem">
+                <div class="homeOneBaseItem">
+                  <div class="homeOneSubTitle">Company Website</div>
+                 <button onclick="expandHomeOneItem(1, 100)" class="homeOneExpand">+</button>
+                </div>
+                <div class="homeOneSubContent">
+                  <p>Increase your company's outreach</p>
+                  <p>Help customers understand what your company offers</p>
+                </div>
+              </div>
+
+              <div id="homeOneItem2" class="homeOneItem">
+                <div class="homeOneBaseItem">
+                  <div class="homeOneSubTitle">Automate Tasks</div>
+                 <button onclick="expandHomeOneItem(2, 100)" class="homeOneExpand">+</button>
+                </div>
+                <div class="homeOneSubContent">
+                  <p>Increase your company's productivity by cutting down on tedious tasks</p>
+                  <p>Reduce errors that can arise during such tasks</p>
+                </div>
+              </div>
+
+              <div id="homeOneItem3" class="homeOneItem">
+                <div class="homeOneBaseItem">
+                  <div class="homeOneSubTitle">Mobile Apps</div>
+                 <button onclick="expandHomeOneItem(3, 100)" class="homeOneExpand">+</button>
+                </div>
+                <div class="homeOneSubContent">
+                  <p>As smartphones are pretty much everywhere, it may make sense to have an app for your business</p>
+                </div>
+              </div>
+
+              <div id="homeOneItem4" class="homeOneItem">
+                <div class="homeOneBaseItem">
+                  <div class="homeOneSubTitle">Much More</div>
+                 <button onclick="expandHomeOneItem(4, 100)" class="homeOneExpand">+</button>
+                </div>
+                <div class="homeOneSubContent">
+                  <p>Contact us today to see if we can help you with your software needs.</p>
+                </div>
+              </div>
+
+            </div>
+    
           </div>
           <!-- <img class="homeOneBackgroundImg" src="./images/workplace.png" /> -->
         </div>
@@ -90,5 +129,6 @@
       </center>
       <img class="homeThreeBackgroundImg" src="./images/robotcall.png" />
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
