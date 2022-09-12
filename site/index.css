@@ -1,0 +1,242 @@
+/*//////// General /////// */
+body {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2, h1, h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.logoColors {
+    animation: color-change 4s infinite;
+    transition-timing-function: ease-in-out;
+    font-size: 22px;
+    font-weight: bolder;
+}
+  
+@keyframes color-change {
+    0% { color: red; }
+    25% { color: green; }
+    50% { color: blue; }
+    75% { color: green; }
+    100% { color: red; }
+}
+
+/* /////// Header /////// */
+
+.headerDiv {
+    width: 100vw;
+    height: 85px;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+}
+
+.headerSpacer {
+    width: 100vw;
+    height: 85px;
+    background-color: white;
+}
+
+.siteTitle {
+    width: 400px;
+    height: 85px;
+}
+
+.headerLinksDiv {
+    width: calc(100vw - 600px);
+    height: 85px;
+    display: flex;
+    justify-content: space-around;
+    align-items: bottom;
+}
+
+.headerLink {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: brown;
+    height: 55px;
+}
+
+.headerLink:hover {
+    cursor: pointer;
+    border-bottom: 2px solid brown;
+}
+
+.headerLinksContainer {
+    height: 85px;
+}
+
+.headerLinksSpacer {
+    height: 30px;
+}
+
+.headerBottomDiv {
+    width: 100vw;
+    height: 5px;
+    background-image: linear-gradient(lightgray, white);
+}
+
+.loginDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 30px;
+}
+
+.loginButton, .signUpButton {
+    width: 120px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 16px;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.loginButton {
+    background-image: linear-gradient(to right, crimson, silver);
+}
+
+.signUpButton {
+    background-image: linear-gradient(to right, silver, crimson);
+}
+
+.loginCircle, .signUpCircle {
+    height: 22px;
+    width: 22px;
+    border-radius: 11px;
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginButton:hover, .signUpButton:hover {
+    cursor: pointer;
+}
+
+.loginCircle {
+    background-color: crimson;
+    color: silver;
+} 
+
+.signUpCircle {
+    background-color: silver;
+    color: crimson;
+}
+
+/* Body */
+
+.bodyDiv {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyHeader {
+    font-size: 50px;
+    padding-top: 30px;
+    text-shadow: 1px 1px gray;
+}
+
+.homeOneDiv, .homeTwoDiv {
+    width: 100vw;
+    margin-top: 0px;
+}
+
+.homeOneDiv {
+    background-image: url("../images/robotbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 560px;
+}
+
+.homeTwoDiv {
+    min-height: 400px;
+    background-image: url("../images/meeting.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.homeSideBySide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeOneContent, .homeTwoContent {
+    width: calc(100% - 300px);
+    padding-left: 150px;
+}
+
+.homeOneContent {
+    margin-top: 50px;
+}
+
+.homeOneBackgroundImg {
+    width: 400px;
+    height: auto;
+    margin-right: 150px;
+    margin-top: 75px;
+}
+
+.tabbedText {
+    margin-left: 30px;
+    width: calc(100% - 400px);
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+#secondHomeDiv {
+    background-color: black;
+}
+
+.homeThreeDiv {
+    background-image: url("../images/home3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.homeThreeSpacer {
+    width: 40vw;
+    height: 100%;
+}
+
+.homeThreeBackgroundImg {
+    height: 200px;
+    margin-left: 35px;
+}
+
+.homeThreeTitle {
+    width: 350px;
+}
