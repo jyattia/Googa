@@ -238,6 +238,8 @@ li {
     width: 100%;
     height: fit-content;
     text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .homeOneItem {
@@ -248,12 +250,8 @@ li {
     margin: 10px 0px 10px 0px;
     overflow: hidden;
     transition-property: height;
-    transition-duration: 2s;
+    transition-duration: 1.5s;
 }
-
-/* #homeOneItem1 {
-    height: 70px;
-} */
 
 .homeOneBaseItem {
     display: flex;
